@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Kurumi - Nền tảng nhắc nhở thông minh</h1>
+        <p>Quản lý nhắc nhở, chia sẻ hóa đơn và thanh toán dễ dàng qua Zalo & Facebook</p>
+        <div class="cta-buttons">
+            <a href="/zalo-auth" class="btn btn-primary"><i class="fas fa-comment"></i> Dùng Zalo</a>
+            <a href="/facebook-auth" class="btn btn-outline"><i class="fab fa-facebook-f"></i> Dùng Facebook</a>
+        </div>
+    </div>
+</section>
+<!-- Hero Banner -->
+<section class="hero-banner">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Kurumi - Nền tảng nhắc nhở thông minh
+            </h1>
+            <p class="hero-subtitle">
+                Quản lý nhắc nhở, chia sẻ hóa đơn và thanh toán dễ dàng qua Zalo & Facebook
+            </p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Người dùng</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Nhắc nhở</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4.8</span>
+                    <span class="stat-label">Đánh giá</span>
+                </div>
+            </div>
+            <div class="cta-buttons">
+                <a href="/zalo-auth" class="btn btn-primary btn-lg">
+                    <i class="fas fa-comment"></i> Dùng với Zalo
+                    <span class="btn-hover-effect"></span>
+                </a>
+                <a href="/facebook-auth" class="btn btn-outline btn-lg">
+                    <i class="fab fa-facebook-f"></i> Dùng với Facebook
+                    <span class="btn-hover-effect"></span>
+                </a>
+            </div>
+            <div class="hero-badges">
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i> Bảo mật 100%
+                </div>
+                <div class="badge">
+                    <i class="fas fa-bolt"></i> Thiết lập nhanh
+                </div>
+                <div class="badge">
+                    <i class="fas fa-clock"></i> Hoạt động 24/7
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
