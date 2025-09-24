@@ -8,8 +8,8 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     # path('', include('users.urls')),  # Đã comment lại vì không có users/urls.py
     # path('reminders/', include('reminders.urls')),  # Đã comment lại vì không có reminders/urls.py
-    path('bills/', include('bills.urls')),
-    path('roommates/', include('roommates.urls')),
+    # path('bills/', include('bills.urls')),
+    # path('roommates/', include('roommates.urls')),
 ]
 
 if settings.DEBUG:
