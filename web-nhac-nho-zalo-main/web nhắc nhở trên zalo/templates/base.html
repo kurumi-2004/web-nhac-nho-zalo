@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Kurumi - Nền tảng nhắc nhở thông minh{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="/" class="logo">Kurumi</a>
+            <ul class="nav-links">
+                <li><a href="/">Trang chủ</a></li>
+                <li><a href="/features">Tính năng</a></li>
+                <li><a href="/pricing">Bảng giá</a></li>
+                <li><a href="/contact">Liên hệ</a></li>
+                <li><a href="/accounts/login" class="btn btn-outline">Đăng nhập</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-links">
+                    <h4>Kurumi</h4>
+                    <ul>
+                        <li><a href="/about">Về chúng tôi</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/careers">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Sản phẩm</h4>
+                    <ul>
+                        <li><a href="/features">Tính năng</a></li>
+                        <li><a href="/pricing">Bảng giá</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Hỗ trợ</h4>
+                    <ul>
+                        <li><a href="/help">Trung tâm trợ giúp</a></li>
+                        <li><a href="/contact">Liên hệ</a></li>
+                        <li><a href="/privacy">Chính sách bảo mật</a></li>
+                        <li><a href="/terms">Điều khoản sử dụng</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Kết nối</h4>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Kurumi. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

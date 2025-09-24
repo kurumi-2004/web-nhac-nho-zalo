@@ -1,0 +1,45 @@
+// Hướng dẫn triển khai render
+
+// 1. Nhập các module cần thiết
+const express = require('express');
+const path = require('path');
+const app = express();
+
+// 2. Cấu hình phục vụ tệp tĩnh
+app.use(express.static('public'));
+
+// 3. Thiết lập công cụ xem
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
+// 4. Định nghĩa các đường dẫn để hiển thị trang
+app.get('/', (req, res) => {
+  res.render('index', {
+    title: 'Trang Chủ',
+    content: 'Chào mừng đến với ứng dụng'
+  });
+});
+
+app.get('/dashboard', (req, res) => {
+  res.render('dashboard', {
+    title: 'Bảng Điều Khiển',
+    user: req.user,
+    data: [] // Thêm dữ liệu của bạn vào đây
+  });
+});
+
+// 5. Xử lý lỗi middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).render('error', {
+    message: 'Đã xảy ra lỗi!'
+  });
+});
+
+// 6. Khởi động máy chủ
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Máy chủ đang chạy trên cổng ${PORT}`);
+});
+
+module.exports = app;

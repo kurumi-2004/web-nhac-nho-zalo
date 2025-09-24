@@ -1,0 +1,73 @@
+HƯỚNG DẪN CÀI ĐẶT VÀ SỬ DỤNG WEB NHẮC NHỞ ZALO
+HƯỚNG DẪN CÀI ĐẶT VÀ SỬ DỤNG WEB NHẮC NHỞ ZALO
+
+Đây là hướng dẫn chi tiết để cài đặt và sử dụng ứng dụng Web Nhắc Nhở Zalo. Vui lòng đọc kỹ và thực hiện theo từng bước.
+
+TỔNG QUAN
+- Ứng dụng Web Nhắc Nhở Zalo giúp bạn tạo và quản lý các nhắc nhở tự động qua Zalo
+- Tính năng chính: Tạo nhắc nhở, gửi tin nhắn tự động, quản lý danh sách nhắc nhở
+- Giao diện thân thiện, dễ sử dụng
+- Tích hợp hoàn toàn với Zalo API
+
+ĐIỀU KIỆN TIÊN QUYẾT
+- Máy tính có kết nối internet ổn định
+- Đã cài đặt Node.js (v14+) và NPM
+- Có tài khoản Zalo Developer (hướng dẫn đăng ký: https://developers.zalo.me)
+- Đã tạo ứng dụng trên Zalo Developer Portal và có các thông tin xác thực
+
+LƯU Ý QUAN TRỌNG
+- Backup dữ liệu thường xuyên
+- Không chia sẻ thông tin xác thực Zalo API
+- Kiểm tra quyền truy cập trước khi sử dụng
+- Cập nhật phiên bản mới nhất của ứng dụng
+
+1. YÊU CẦU HỆ THỐNG
+- Node.js version 14 trở lên
+- NPM (Node Package Manager)
+- Tài khoản Zalo Developer
+
+2. HƯỚNG DẪN CÀI ĐẶT
+a. Clone repository về máy:
+   git clone [url_repository]
+
+b. Cài đặt các dependencies:
+   - Mở terminal trong thư mục project
+   - Chạy lệnh: npm install
+
+c. Cấu hình:
+   - Tạo file .env trong thư mục gốc
+   - Thêm các thông tin cấu hình Zalo API:
+     ZALO_APP_ID=your_app_id
+     ZALO_APP_SECRET=your_app_secret
+     ZALO_ACCESS_TOKEN=your_access_token
+
+3. HƯỚNG DẪN CHẠY
+- Chạy lệnh: npm start
+- Truy cập website tại: http://localhost:3000
+
+4. HƯỚNG DẪN SỬ DỤNG
+a. Đăng nhập:
+   - Đăng nhập bằng tài khoản Zalo
+   - Cấp quyền truy cập cho ứng dụng
+
+b. Tạo nhắc nhở:
+   - Click nút "Tạo mới"
+   - Điền thông tin nhắc nhở:
+     + Tiêu đề
+     + Nội dung
+     + Thời gian
+   - Click "Lưu" để tạo nhắc nhở
+
+c. Quản lý nhắc nhở:
+   - Xem danh sách nhắc nhở
+   - Sửa/Xóa nhắc nhở
+   - Bật/tắt trạng thái
+
+5. XỬ LÝ LỖI THƯỜNG GẶP
+- Lỗi kết nối: Kiểm tra kết nối internet
+- Lỗi đăng nhập: Kiểm tra thông tin đăng nhập Zalo
+- Lỗi API: Kiểm tra cấu hình trong file .env
+
+6. HỖ TRỢ
+- Email: support@example.com
+- Github Issues: [link_to_issues]
