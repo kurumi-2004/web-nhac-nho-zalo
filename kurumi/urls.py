@@ -7,7 +7,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
     # path('', include('users.urls')),  # Đã comment lại vì không có users/urls.py
-    path('reminders/', include('reminders.urls')),
+    # path('reminders/', include('reminders.urls')),  # Đã comment lại vì không có reminders/urls.py
     path('bills/', include('bills.urls')),
     path('roommates/', include('roommates.urls')),
 ]
