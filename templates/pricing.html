@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %}Bảng giá | Kurumi{% endblock %}
+{% block content %}
+<section class="pricing">
+    <div class="container">
+        <h1>Bảng giá dịch vụ</h1>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h2>Miễn phí</h2>
+                <p>0đ/tháng</p>
+                <ul class="pricing-features">
+                    <li>Nhắc nhở cơ bản</li>
+                    <li>Quản lý cá nhân</li>
+                </ul>
+            </div>
+            <div class="pricing-card highlighted">
+                <h2>Pro</h2>
+                <p>49.000đ/tháng</p>
+                <ul class="pricing-features">
+                    <li>Nhắc nhở nhóm</li>
+                    <li>Chia sẻ hóa đơn</li>
+                    <li>Ưu tiên hỗ trợ</li>
+                </ul>
+            </div>
+            <div class="pricing-card">
+                <h2>Team</h2>
+                <p>99.000đ/tháng</p>
+                <ul class="pricing-features">
+                    <li>Quản lý nhóm lớn</li>
+                    <li>Báo cáo chi tiết</li>
+                    <li>Hỗ trợ doanh nghiệp</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
